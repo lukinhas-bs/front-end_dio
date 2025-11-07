@@ -1,0 +1,42 @@
+/* 
+    Margin: é o espaçamento externo de um elemento HTML. Ou seja, é o espaço entre um elemento e os outros elementos ao redor dele.
+    Um valor: aplica nos 4 lados
+    Dois valores: em cima e embaixo, segundo valor nas laterais
+    Três valores: em cima, lados e embaixo
+    Quatro valores: em cima, direita, embaixo e esquerda
+
+    margin: todos os lados 
+    margin-top: apenas em cima
+    margin-bottom: apenas embaixo
+    margin-right: apenas na direita
+    margin-left: apenas na esquerda
+*/
+        
+/* 
+    Padding: é o espaçamento interno de um elemento HTML, ou seja, o espaço entre o conteúdo e a borda (border) do elemento.
+    Um valor: aplica nos 4 lados
+    Dois valores: em cima e embaixo, segundo valor nas laterais
+    Três valores: em cima, lados e embaixo
+    Quatro valores: em cima, direita, embaixo e esquerda
+
+    padding: todos os lados 
+    padding-top: apenas em cima
+    padding-bottom: apenas embaixo
+    padding-right: apenas na direita
+    padding-left: apenas na esquerda
+*/
+
+div {
+    width: 300px;
+    height: 300px;
+}
+       
+#elemento_1 {
+    background: orange;
+    margin-bottom: 20px;
+    padding: 10px 20px 40px 25px;
+}
+#elemento_2 {
+    background: purple;
+    margin: 20px 30px 25px 50px;
+}
