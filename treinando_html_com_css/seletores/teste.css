@@ -1,0 +1,17 @@
+/* Exemplos de seletor por Tag*/
+li {color: teal;}
+h1 {color: chocolate; background: rgb(63, 52, 38);}
+
+/* Exemplos de seletor por ID*/
+#exemplo_1 {color: crimson; background: black;}
+
+/* Exemplos de seletor por Classe*/
+.maiusculo {color: darkblue; text-transform: uppercase;}
+.exemplo_2 {color: yellowgreen;}
+
+/* Exemplos de seletor por Atributo*/
+[title="Netflix"] {color: red;}
+[href="https://www.youtube.com/"] {color: green;}
+[title~="streaming"] {color: black;} /* Nesse caso, o programa vai procurar a palavra exata, nesse caso,"streaming", ou separada por "espaço" em todos os lugares que tem o "title"*/
+[href^="http:"] {color: rgb(148, 168, 0);} /* Nesse caso, o programa vai procurar a palavra exata, nesse caso,"http:", no inicio, em todos os lugares que tem o "href"*/
+[href*="login"] {background: lightgreen;} /* Nesse caso, o programa vai procurar a palavra exata, nesse caso,"login:", em todos os lugares ou circustancias que a palavra está, dentro do "href"*/
