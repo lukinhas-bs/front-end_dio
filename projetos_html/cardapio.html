@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Cardápio da pizzaria</title>
+    </head>
+
+    <body>
+        <form method="get">
+            <h3>Opcionais</h3>
+
+            <p>Selecione quais opcionais voce vai querer</p>
+            <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+            <input type="checkbox" name="opcional[]" value="cebola"> + cebola <br>
+            <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br>
+            <input type="checkbox" name="opcional[]" value="oregano"> + orégano <br><br>
+
+            <p>Borda recheada</p>
+            <input type="radio" name="borda" value="sim"> Sim<br>
+            <input type="radio" name="borda" value="nao">Não<br><br>
+
+            <p>Bebidas</p>
+            <input type="radio" name="bebida" value="suco"> Suco<br>
+            <input type="radio" name="bebida" value="refrigerante"> Refrigerante<br>
+            <input type="radio" name="bebida" value="agua"> Água<br>
+            <input type="radio" name="bebida" value="sem"> Não quero<br><br>
+
+            <select name="role">
+                <option value="">Pesquisa de satisfação</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+            </select><br><br>
+
+            <button type = "submit"> Enviar pedido</button>
+        </form>
+
+    </body>
+
+</html>
