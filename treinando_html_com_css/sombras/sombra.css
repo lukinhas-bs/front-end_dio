@@ -1,0 +1,24 @@
+/*
+O INSET serve para colocar a sobra dentro do quadrado, ou qualquer outra coisa.
+O primeiro e segundo valor: são as dimenções das sombras.
+O terceiro valor: é a nitidez da sombra, quando maior o valor, cada vez mais a sombra vai ficando menos nítida.
+O quarto valor: é o tamanho da sombra.
+
+Na teoria, a função "filter: drop-shadow();" coloca uma sombra na propria imagem não no quadrado da imagem
+*/
+
+div {
+    width: 300px;
+    height: 300px;
+    background: darkslategrey;
+    border: 10px solid darkgoldenrod;
+    box-shadow: inset 30px 30px 5px  deeppink;
+}
+
+h2 {
+    width: 400px;
+    height: 400px;  
+    margin: 20px auto;
+    object-fit: cover;
+    filter: drop-shadow(10px 10px gray);
+}
