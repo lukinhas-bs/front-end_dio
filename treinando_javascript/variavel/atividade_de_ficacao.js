@@ -12,6 +12,6 @@ const kmPorLitro = 10;
 
 let distancia = 100
 
-let valorDaViagem = distancia/kmPorLitro*combustivel;
+const valorDaViagem = distancia/kmPorLitro*combustivel;
 
 console.log("O valor gasto na viagem foi de " + valorDaViagem)
