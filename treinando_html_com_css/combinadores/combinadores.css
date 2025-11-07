@@ -1,0 +1,16 @@
+/* 
+    Combinadores: qual tipo de relação entre 2 seletores.
+    1. Combinador descendente (espaço)
+    2. Combinador filho (>)
+    3. Combinador irmão adjacente (+)
+    4. Combinador irmão em geral (~)
+*/
+
+/* Exemplos de combinador filho */
+div > h2 {color: red;}
+
+/* Exemplos de combinador irmão adjacente, ou seja, é o que vem logo em seguida*/
+.oi + blockquote {background: greenyellow;} /* Sempre quem vai ser modificado é quem vem dps do "+"*/
+
+/* Exemplos de combinador irmão em geral*/
+div ~ p {color: crimson;}
