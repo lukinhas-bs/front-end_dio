@@ -1,0 +1,61 @@
+        /*Tipos de borda:
+        
+        1 - solid
+        2 - dashed
+        3 - dotted
+        4 - double 
+        5 - groove
+        6 - ridge
+        7 - inset
+        8 - outset
+        */
+body {
+    font-family: Roboto, sans-serif;           
+}
+
+.exemplo {
+    background-color: darkred;
+    width: 200px;
+    height: 200px;
+    border: solid black 10px;
+    border-radius: 100%;
+}
+
+.exemplo2 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border-style: dashed;
+    border-width: 10px;
+    border-color: black;
+    border-radius: 20px;
+}
+
+.exemplo3 {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    border-style: dotted;
+    border-width: 10px;
+    border-color: black;
+}
+
+#exemplo {
+    background-color:chartreuse;
+    width: 200px;
+    height: 200px;
+    border: solid 20px;
+    border-image-source: url("https://i.pinimg.com/236x/83/d2/37/83d2371c76b7c16573c507b2c7f97180.jpg");
+    border-image-repeat: round;
+    border-image-slice: 30 ;
+}
+
+#exemplo2 {
+    background-color:chartreuse;
+    width: 200px;
+    height: 200px;
+    border: solid 20px;
+    border-image-source: url("https://i.pinimg.com/236x/83/d2/37/83d2371c76b7c16573c507b2c7f97180.jpg");
+    border-image-outset: 40px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
