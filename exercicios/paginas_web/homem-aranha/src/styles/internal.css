@@ -1,4 +1,9 @@
-@import url("./reset.css");
+@import url("reset.css");
+@import url("ajuda/_navigator.css");
+@import url("ajuda/_pills.css");
+@import url("ajuda/botao.css");
+@import url("ajuda/fotos.css");
+
 
 .s-wrapper {
     display: flex;
@@ -9,76 +14,68 @@
 .s-wrapper .s-left-column {
     width: 100px;
     height: 100%;
-    background-color: black;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    padding-right: 50px;
+    left: 0;
+    top: 0;
+    z-index: 1;
 }
 
 .s-wrapper .s-main-content {
     height: 100%;
     width: 100%;
     background-color: gray;
-    padding-left: 30px;
+    padding-left: 130px;
+    background-image: url("https://github.com/diogomainardes/dio-spiderman/blob/main/assets/images/spiderman-tobey/movie-01/background.png?raw=true");
+    background-size: cover;
+
 }
 
-.navigator  {
-    height: 60vh;
+.s-wrapper .s-main-content__top {
+    height: 80vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.navigator ul li {
-    margin: 60px 0;
+.s-wrapper .s-main-content__bottom {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.navigator ul li:first-child {
-    margin-top: 0;
+.s-wrapper .s-main-content .s-logo img {
+    margin-top: 50px;
+    margin-left: 0;
+    margin-bottom: 30px;
 }
 
-.navigator ul li:last-child {
-    margin-bottom: 0;
+.s-wrapper .s-main-content__top .s-description {
+    background-color: rgba(0, 0, 0,.7);
+    max-width: 50%;
+    padding: 20px;
+    border-radius: 10px;
 }
 
-.navigator ul li a {
+.s-wrapper .s-main-content__top .s-description .s-description__text p {
     color: white;
-    border: solid 2px white;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: black;
+    line-height: 170%;
+} 
+
+.s-wrapper .s-main-content__top .s-description .pills {
+    margin-bottom: 20px;
+}
+
+.s-wrapper .s-main-content .s-links{
+  padding: 20px;
+  padding-left: 0;
+}
+
+.s-wrapper .s-main-content .s-links ul {
     display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*---- LINHA ---- */
-.navigator::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 2px;
-    height: 100%;
-    background-color: white;
-    z-index: 0;
-
-}
-
-.navigator ul {
-    z-index: 1;
-}
-
-.navigator ul li a:hover,
-.navigator ul li a.active {
-    color: var(--primary-color);
-    background-color: white;
-}
-
-.navigator .navigator__icon {
-    position: absolute;
-    top: -20px;
-
+    flex-direction: row;
 }
