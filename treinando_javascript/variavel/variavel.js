@@ -2,7 +2,7 @@ console.log("hello world!")
 
 // O 'let' é para declarar um variavel
 // Boas práticas: quando declarar uma variavel evite números, acentos e espaços. Se for uma variável com duas palavras, a primeira palavra é minuscula e a segunda palavra começa maiúscula.
-let nickname = "lukinhasbs"
+let nickname = "lumatador"
 let poteCafe = 'café pilão'
 let poteAcucar = "Açucar cristal"
 
