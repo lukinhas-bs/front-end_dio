@@ -1,0 +1,70 @@
+/*
+    Text-transform:
+    1 - capitalize: faz com que todas as palavras comecem com letra maiúscula.
+    2 - uppercase: todas as letras ficam maiúsculas.
+    3 - lowercase: todas as letras ficam minúsculas.
+
+    Text-aling:
+    1 - right: o texto vai ser escrito da direita para a esquerda.
+    2 - left: o texto vai ser escrito da esquerda para a direita.
+    3 - center: o texto vai ser alinhado no centro.
+    4 - justify: o texto fica todo organizado.
+
+    Text-Decoration: 
+    1 - Text-decoration-line:
+        1.1 - underline: coloca uma linha embaixo do texto.
+        1.2 - line-through: a linha fica no meio da palavra, ou seja, ela risca a palavra.
+        1.3 - overline: coloca um linha em cima do texto.
+    2 - Text-decoration-style: qual tipo de linha a gente vai usar.
+        2.1 - solid: modelo padrão da linha.
+        2.2 - double: linha dupla.
+        2.3 - dotted: uma linha de pontinhos.
+        2.4 - dashed: uma linha de tracinhos.
+        2.5 - wavy: uma linha de ondas.
+    3 - Text-decoration-color: serve para colorir a linha.
+    4 - Text-decoration-thickness: serve para controlar o tamanho da linha.
+
+    Text-Ident: recuo da primeira linha do parágrafo.
+*/
+
+#teste1 {
+    text-transform: capitalize;
+    text-align: left;
+}
+
+#teste2 {
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#teste3 {
+    background-color: lavender;
+    padding: 10px;
+    text-align: center;
+}
+
+.exemplo1 {
+    background-color: lavender;
+    width: 600px;
+    border: 1px solid black;
+    text-align: justify;
+}
+
+.exemplo2 {
+    text-decoration: overline dotted darkolivegreen 3px;
+}
+
+#line {
+    text-decoration: line-through;
+    text-decoration-style: wavy;
+    text-decoration-color: brown;
+    text-decoration-thickness: 2px;
+}
+
+.recuo {
+    text-indent: 20px;
+}
+
+a {
+    text-decoration: none;
+}
