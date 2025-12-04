@@ -33,7 +33,9 @@ function selectCarouselItem(selectedButtonElement) {
 
     carousel.style.transform = newTransform;
 
+    // MARCAÇÃO DOS PONTOS
     const activeButtonElement = document.querySelector('.s-controller__button--active');
-    activeButtonElement.classList.remove('.s-controller__button--active');
-    selectedButtonElement.classList.add('.s-controller__button--active');
-}
+    // Quando usamos classList.add() ou classList.remove(), não colocamos o ponto da classe, apenas o nome
+    activeButtonElement.classList.remove('s-controller__button--active');
+    selectedButtonElement.classList.add('s-controller__button--active');
+};
