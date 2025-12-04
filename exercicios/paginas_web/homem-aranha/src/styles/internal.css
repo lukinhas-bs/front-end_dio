@@ -1,14 +1,58 @@
-@import url("reset.css");
-@import url("ajuda/_navigator.css");
-@import url("ajuda/_pills.css");
-@import url("ajuda/botao.css");
-@import url("ajuda/fotos.css");
+@import url('reset.css');
+/*---- POR ESTAREM EM PASTA DIFERENTES, É ESSE O MODO CORRETO PARA CHAMAR ELAS ----*/
+@import url('ajuda/fotos.css');
+@import url('ajuda/_pills.css');
+@import url('ajuda/botao.css');
+@import url('ajuda/_navigator.css');
 
+/*--- VARIAVEIS ---*/
+.tobey1 {
+    --img: url("https://github.com/diogomainardes/dio-spiderman/blob/main/assets/images/spiderman-tobey/movie-01/background.png?raw=true");
+}
+
+.tobey2 {
+  --img: url("https://github.com/diogomainardes/dio-spiderman/blob/main/assets/images/spiderman-tobey/movie-02/background.png?raw=true");
+}
+
+.tobey3 {
+  --img: url("https://github.com/diogomainardes/dio-spiderman/blob/main/assets/images/spiderman-tobey/movie-03/background.png?raw=true");
+}
+
+.andrew1 {
+    --img: url("https://github.com/diogomainardes/dio-spiderman/blob/main/assets/images/spiderman-andrew/movie-01/background.png?raw=true");
+}
+
+.andrew2 {
+    --img: url("https://github.com/diogomainardes/dio-spiderman/blob/main/assets/images/spiderman-andrew/movie-02/background.png?raw=true");
+}
+
+.tom1 {
+    --img: url("https://github.com/diogomainardes/dio-spiderman/blob/main/assets/images/spiderman-tom/movie-01/background.png?raw=true");
+}
+
+.tom2 {
+    --img: url("https://github.com/diogomainardes/dio-spiderman/blob/main/assets/images/spiderman-tom/movie-02/background.png?raw=true");
+}
+
+.tom3 {
+    --img: url("https://github.com/diogomainardes/dio-spiderman/blob/main/assets/images/spiderman-tom/movie-03/background.png?raw=true")
+}
+
+/*--- EDITANDO A PÁGINA ---*/
+p {
+    text-align: justify;
+}
 
 .s-wrapper {
     display: flex;
     height: 100vh;
     flex-flow: row nowrap;
+}
+
+/*--- APENAS PARA AS PAGINAS QUE O PLANO DE FUNDO É VÍDEO ---*/
+.s-wrapper video {
+    position: fixed;
+    width: 100%;
 }
 
 .s-wrapper .s-left-column {
@@ -29,9 +73,8 @@
     width: 100%;
     background-color: gray;
     padding-left: 130px;
-    background-image: url("https://github.com/diogomainardes/dio-spiderman/blob/main/assets/images/spiderman-tobey/movie-01/background.png?raw=true");
+    background-image: var(--img);
     background-size: cover;
-
 }
 
 .s-wrapper .s-main-content__top {
